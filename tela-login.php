@@ -61,9 +61,6 @@
        } else{
         $reg = $busca->fetch_object();
         if(testarHash($senha,$reg->senha)){
-          echo "<div class='spinner-border text-primary' role='status'>";
-          echo "<span class='visually-hidden'></span>";
-          echo "</div>";
          echo sucesso("Logado com Sucesso!");
          $_SESSION['email'] = $reg->email;
          $_SESSION['nome'] = $reg->nome;

@@ -33,10 +33,10 @@
   <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 </head>
 <?php 
-  if(empty($_SESSION['email'])){
+  if(!is_logado()){
    $display = "none";
    $color = "lightgray";
-   echo erro("<div style='text-align: center; margin-top: 30px;'>Faça o login para ter acesso");
+   echo erro("Faça o login para ter acesso");
    echo "<a href='tela-login.php' target='_self'><span class='material-symbols-outlined back' style='zoom: 210%; margin-left: 23vw;'>chevron_left</span></a></div>";
   }
 ?>
@@ -57,7 +57,7 @@
    </ul>
   </div>  
  </header>
- <main>
+ <main style="display: <?=$display?>">
     <h1>Menu</h1>
  </main>
 

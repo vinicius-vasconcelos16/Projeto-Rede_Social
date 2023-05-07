@@ -105,10 +105,19 @@ label{
 }
 
 input[type="submit"]{
- margin-top: 40px;
+ margin-top: 43px;
  border-radius: 45px;
  background-color: white;
 }
+
+input[type="date"]{
+ text-align: center;
+ padding-top: 18px;
+ padding-bottom: 6px;
+ cursor: pointer;
+}
+
+
 /* Edição da parte Main do Site */
 main{
  text-align: left;

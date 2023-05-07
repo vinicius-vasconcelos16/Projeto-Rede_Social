@@ -17,14 +17,14 @@
    return $hash;
   }
   function testarHash($senha,$hash){
-   $senha_rev = strrev($senha);
-   $teste = password_verify($senha_rev,$hash);
-   if($teste==1){
-    return true;
-   } else{
-    return false;
+     $senha_rev = strrev($senha);
+     $teste = password_verify($senha_rev,$hash);
+     if($teste==1){
+        return true;
+      } else{
+         return false;
+      }
    }
-  }
  function logout(){
     unset($_SESSION['email']);
     unset($_SESSION['nome']);

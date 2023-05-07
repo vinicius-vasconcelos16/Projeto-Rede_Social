@@ -33,9 +33,6 @@
 </head>
 <body> 
   <div class="container" style="text-align: center; margin-top: 30px;">
-    <div class="spinner-border text-primary" role="status">
-      <span class="visually-hidden"></span>
-    </div>
    <?php
       /* Desativação das globais SESSION */
       unset($_SESSION['email']);
