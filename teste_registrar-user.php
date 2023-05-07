@@ -10,7 +10,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registro - Vinclass</title>
+  <title>Menu - Vinclass</title>
   <link rel="shortcut icon" href="img/pesquisa.png" type="image/x-icon">
   <!-- Fonte -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
@@ -33,6 +33,10 @@
   <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
   <!-- Style Local -->
   <style>
+   .align-items-right{
+    align-items: center;
+    align-self: center;
+   }
   </style>
 </head>
 <body style="background-color: <?=$color?>">
@@ -71,11 +75,11 @@
        <input required type="text" name="endereco" id="endereco-txtbox" class="form-control form-control-lg" placeholder="Rua/Av e Número">
        
        <label for="telefone">Telefone </label>
-       <input required type="text" name="telefone" id="telefone-txtbox" class="form-control form-control-lg" placeholder="(xx) xxxxx-xxxx">
+       <input required type="tel" name="telefone" id="telefone-txtbox" class="form-control form-control-lg" placeholder="(xx) xxxxx-xxxx">
        
        <abbr title="É necessária a mudança de senha, após a alteração dos dados!"><label for="senha">Senha</label></abbr>
        <input required type="password" name="senha" id="senha-txtbox" class="form-control form-control-lg" minlength="6" maxlength="8" placeholder=" ● ● ● ● ● ● ● ●">
-       <input required type="submit" value="Registrar-se" class="btn-confirmar form-control btn btn-outline-success">
+       <input required type="submit" value="Confirmar Alteração" class="btn-confirmar form-control btn btn-outline-success">
      </div>  
     </div>
    </form>
@@ -91,33 +95,27 @@
 
     $p = "SELECT email FROM usuarios";
     $busca = $banco->query($p);
-    $aux = 1;
+    $aux = 0;
 
-    if($busca || !$busca){
+    if($busca && !$email == null){
       $reg = $busca->fetch_object();
-      while($reg){
+      while($reg && $aux == 0){
         $reg = $busca->fetch_object();
-        if($email == null){
+        $linhas = $busca->num_rows;
+        if($reg->email == "$email"){
+          echo erro("O email já possui um cadastro! Faça <a href='tela-login.php'>login</a> aqui.");
           break;
-        }else{
-          if(@$reg->email == "$email"){
-            echo erro("O email já possui um cadastro! Faça <a href='tela-login.php'>login</a> aqui.");
-            $aux = 1;
-            break;
-          } else{
-            $aux = 0;
+        } else{
+          if($linhas == 0){
+            $hash_senha = gerarHash($senha);
+            $q = "INSERT INTO usuarios (`email`, `nome`, `sexo`, `nascimento`, `endereco`, `telefone`, `senha`) VALUES ('$email','$nome','$sexo','$nascimento','$endereco','$telefone','$hash_senha')";
+            $insercao = $banco->query($q);
+            echo "<br>";
+            echo sucesso("Usuário criado com sucesso! Faça <a href='tela-login.php'>login</a> para continuar ");
           }
         }
+        $linhas -= 1;
       }
-    }
-    if($email == null || $aux == 1){
-      exit;
-    }else{
-      $hash_senha = gerarHash($senha);
-      $q = "INSERT INTO usuarios (`email`, `nome`, `sexo`, `nascimento`, `endereco`, `telefone`, `senha`) VALUES ('$email','$nome','$sexo','$nascimento','$endereco','$telefone','$hash_senha')";
-      $insercao = $banco->query($q);
-      echo "<br>";
-      echo sucesso("Usuário criado com sucesso! Faça <a href='tela-login.php'>login</a> para continuar ");
     }
   ?>
  </body>

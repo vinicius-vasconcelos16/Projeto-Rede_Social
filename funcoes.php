@@ -21,5 +21,4 @@
   $resp = "<div class='msg_erro'><span class='material-symbols-outlined'>warning</span>$msg</div>";
   return $resp;
  }
-
 ?>

@@ -84,10 +84,11 @@
        <input type="text" name="telefone" id="telefone-txtbox" class="form-control form-control-lg" value="<?=$_SESSION['telefone']?>">
        
        <abbr title="É necessária a mudança de senha, após a alteração dos dados!"><label for="senha">Senha <strong style="color: red; text-shadow: 0px 0px 1px red;">*</strong> </label></abbr>
-       <input type="password" name="senha" id="senha-txtbox" class="form-control form-control-lg" minlength="6" maxlength="8" required oninvalid="this.setCustomValidity('É necessária a mudança de senha, após a alteração dos dados!')">
-       <input type="submit" value="Confirmar Alteração" class="btn-confirmar form-control btn btn-outline-success">
+       <input type="password" name="senha" id="senha-txtbox" class="form-control form-control-lg" minlength="6" maxlength="8" required>
+       <input type="submit" value="Confirmar Alteração" class="btn-confirmar form-control btn btn-outline-success" onclick="alert('Dados Atualizado!')">
      </div>  
    </div>
+   <p style="color: gray; font-size: 0.9em; font-weight: 800; margin-left: 2vw; margin-top: 1vh;">(Atualize a página para conferir a atualização dos dados.)</p>
     <a href="tela-logout.php" style="float: right;"><button type="button" class="btn btn-outline-danger">Sair</button></a>
   </form>
   <?php 
