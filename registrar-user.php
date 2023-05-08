@@ -52,7 +52,7 @@
     </ul>
    </div>  
   </header>
-  <main style="text-align: center;">
+  <main style="text-align: center; padding: 20px">
    <h1>Registrar-se</h1>
    <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
     <div class="row g-2 align-items-right">

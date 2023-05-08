@@ -31,6 +31,14 @@
   <script src="js/progressbar.min.js"></script>
   <!-- Parallax -->
   <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+  <style>
+    main{
+      cursor: default;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body style="background-color: <?=$color?>">
  <!--Barra de Navegação-->
@@ -49,128 +57,139 @@
    </ul>
   </div>  
  </header>
- <main style="padding: 0px; background-color: #2D4B73;">
-    <div class="container text-center" style="margin: 0;">
-        <div class="row align-items-start" style="background-color: #253C59;">
-          <div class="col-sm-3 fixed" style="background-color: #2D4B73; margin: 40px;margin-right: 4vw; padding: 0px; border: 2px solid black;">
-              <img src="img/sem-foto.png" class="img-fluid" alt="unloged-user.png">
+ <a href="#" onclick="alert('Para navegar e ter acesso á todo o conteúdo, faça Login ou Cadastre-se.')" style="color: #192026;">
+   
+   <main class="menu-principal">
+      <div class="container text-center" style="margin: 0; filter: blur(3px);">
+          <div class="row align-items-start" style="background-color: #253C59; ">
+            <div class="col-sm-3 fixed coluna-foto">
+                <img src="img/sem-foto.png" class="img-fluid" alt="unloged-user.png">
+            </div>
+            <div class="col-sm-8 p-3 coluna-feed">
+              <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
+                <div class="col-md-6 mb-md-0 p-md-4">
+                  <img src="img/paisagem1.avif" class="w-100 imagem-feed" alt="paisagem">
+                </div>
+                <div class="col-md-6 p-4 ps-md-0">
+                  <h5 class="mt-0">Por: Luís Vinicius</h5>
+                  <div class="div-comentario">
+                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                  </div>
+                  <p class="ver-perfil-feed">Ver Perfil <span class="material-symbols-outlined">arrow_right_alt</span></p>
+                </div>
+              </div>
+              <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
+                <div class="col-md-6 mb-md-0 p-md-4">
+                  <img src="img/paisagem1.avif" class="w-100 imagem-feed" alt="paisagem">
+                </div>
+                <div class="col-md-6 p-4 ps-md-0">
+                  <h5 class="mt-0">Por: Luís Vinicius</h5>
+                  <div class="div-comentario">
+                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                  </div>
+                  <p class="ver-perfil-feed">Ver Perfil <span class="material-symbols-outlined">arrow_right_alt</span></p>
+                </div>
+              </div>
+              <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
+                <div class="col-md-6 mb-md-0 p-md-4">
+                  <img src="img/paisagem1.avif" class="w-100 imagem-feed" alt="paisagem">
+                </div>
+                <div class="col-md-6 p-4 ps-md-0">
+                  <h5 class="mt-0">Por: Luís Vinicius</h5>
+                  <div class="div-comentario">
+                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                  </div>
+                  <p class="ver-perfil-feed">Ver Perfil <span class="material-symbols-outlined">arrow_right_alt</span></p>
+                </div>
+              </div>
+              <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
+                <div class="col-md-6 mb-md-0 p-md-4">
+                  <img src="img/paisagem1.avif" class="w-100 imagem-feed" alt="paisagem">
+                </div>
+                <div class="col-md-6 p-4 ps-md-0">
+                  <h5 class="mt-0">Por: Luís Vinicius</h5>
+                  <div class="div-comentario">
+                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                  </div>
+                  <p class="ver-perfil-feed">Ver Perfil <span class="material-symbols-outlined">arrow_right_alt</span></p>
+                </div>
+              </div>
+              <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
+                <div class="col-md-6 mb-md-0 p-md-4">
+                  <img src="img/paisagem1.avif" class="w-100 imagem-feed" alt="paisagem">
+                </div>
+                <div class="col-md-6 p-4 ps-md-0">
+                  <h5 class="mt-0">Por: Luís Vinicius</h5>
+                  <div class="div-comentario">
+                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                  </div>
+                  <p class="ver-perfil-feed">Ver Perfil <span class="material-symbols-outlined">arrow_right_alt</span></p>
+                </div>
+              </div>
+              <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
+                <div class="col-md-6 mb-md-0 p-md-4">
+                  <img src="img/paisagem1.avif" class="w-100 imagem-feed" alt="paisagem">
+                </div>
+                <div class="col-md-6 p-4 ps-md-0">
+                  <h5 class="mt-0">Por: Luís Vinicius</h5>
+                  <div class="div-comentario">
+                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                  </div>
+                  <p class="ver-perfil-feed">Ver Perfil <span class="material-symbols-outlined">arrow_right_alt</span></p>
+                </div>
+              </div>
+              <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
+                <div class="col-md-6 mb-md-0 p-md-4">
+                  <img src="img/paisagem1.avif" class="w-100 imagem-feed" alt="paisagem">
+                </div>
+                <div class="col-md-6 p-4 ps-md-0">
+                  <h5 class="mt-0">Por: Luís Vinicius</h5>
+                  <div class="div-comentario">
+                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                  </div>
+                  <p class="ver-perfil-feed">Ver Perfil <span class="material-symbols-outlined">arrow_right_alt</span></p>
+                </div>
+              </div>
+              <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
+                <div class="col-md-6 mb-md-0 p-md-4">
+                  <img src="img/paisagem1.avif" class="w-100 imagem-feed" alt="paisagem">
+                </div>
+                <div class="col-md-6 p-4 ps-md-0">
+                  <h5 class="mt-0">Por: Luís Vinicius</h5>
+                  <div class="div-comentario">
+                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                  </div>
+                  <p class="ver-perfil-feed">Ver Perfil <span class="material-symbols-outlined">arrow_right_alt</span></p>
+                </div>
+              </div>
+              <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
+                <div class="col-md-6 mb-md-0 p-md-4">
+                  <img src="img/paisagem1.avif" class="w-100 imagem-feed" alt="paisagem">
+                </div>
+                <div class="col-md-6 p-4 ps-md-0">
+                  <h5 class="mt-0">Por: Luís Vinicius</h5>
+                  <div class="div-comentario">
+                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                  </div>
+                  <p class="ver-perfil-feed">Ver Perfil <span class="material-symbols-outlined">arrow_right_alt</span></p>
+                </div>
+              </div>
+              <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
+                <div class="col-md-6 mb-md-0 p-md-4">
+                  <img src="img/paisagem1.avif" class="w-100 imagem-feed" alt="paisagem">
+                </div>
+                <div class="col-md-6 p-4 ps-md-0">
+                  <h5 class="mt-0">Por: Luís Vinicius</h5>
+                  <div class="div-comentario">
+                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                  </div>
+                  <p class="ver-perfil-feed">Ver Perfil <span class="material-symbols-outlined">arrow_right_alt</span></p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-8 p-3" style="border-left: 2px solid #99B4BF; background-color: #2D4B73">
-
-            <div class="row g-0 bg-body-secondary position-relative" style="border-radius: 10px; border: 2px solid #99B4BF; margin-top: 40px; margin-left: 10px; margin-bottom: 20px;">
-              <div class="col-md-6 mb-md-0 p-md-4">
-                <img src="img/paisagem1.avif" style="border: 2px solid black; border-radius: 10px;" class="w-100" alt="paisagem">
-              </div>
-              <div class="col-md-6 p-4 ps-md-0">
-                <h5 class="mt-0">Columns with stretched link</h5>
-                <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                <a href="#" class="stretched-link">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="row g-0 bg-body-secondary position-relative" style="border-radius: 10px; border: 2px solid #99B4BF; margin-top: 40px; margin-left: 10px; margin-bottom: 20px;">
-              <div class="col-md-6 mb-md-0 p-md-4">
-                <img src="img/paisagem1.avif" style="border: 2px solid black; border-radius: 10px;" class="w-100" alt="...">
-              </div>
-              <div class="col-md-6 p-4 ps-md-0">
-                <h5 class="mt-0">Columns with stretched link</h5>
-                <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                <a href="#" class="stretched-link">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="row g-0 bg-body-secondary position-relative" style="border-radius: 10px; border: 2px solid #99B4BF; margin-top: 40px; margin-left: 10px; margin-bottom: 20px;">
-              <div class="col-md-6 mb-md-0 p-md-4">
-                <img src="img/paisagem1.avif" style="border: 2px solid black; border-radius: 10px;" class="w-100" alt="...">
-              </div>
-              <div class="col-md-6 p-4 ps-md-0">
-                <h5 class="mt-0">Columns with stretched link</h5>
-                <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                <a href="#" class="stretched-link">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="row g-0 bg-body-secondary position-relative" style="border-radius: 10px; border: 2px solid #99B4BF; margin-top: 40px; margin-left: 10px; margin-bottom: 20px;">
-              <div class="col-md-6 mb-md-0 p-md-4">
-                <img src="img/paisagem1.avif" style="border: 2px solid black; border-radius: 10px;" class="w-100" alt="...">
-              </div>
-              <div class="col-md-6 p-4 ps-md-0">
-                <h5 class="mt-0">Columns with stretched link</h5>
-                <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                <a href="#" class="stretched-link">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="row g-0 bg-body-secondary position-relative" style="border-radius: 10px; border: 2px solid #99B4BF; margin-top: 40px; margin-left: 10px; margin-bottom: 20px;">
-              <div class="col-md-6 mb-md-0 p-md-4">
-                <img src="img/paisagem1.avif" style="border: 2px solid black; border-radius: 10px;" class="w-100" alt="...">
-              </div>
-              <div class="col-md-6 p-4 ps-md-0">
-                <h5 class="mt-0">Columns with stretched link</h5>
-                <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                <a href="#" class="stretched-link">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="row g-0 bg-body-secondary position-relative" style="border-radius: 10px; border: 2px solid #99B4BF; margin-top: 40px; margin-left: 10px; margin-bottom: 20px;">
-              <div class="col-md-6 mb-md-0 p-md-4">
-                <img src="img/paisagem1.avif" style="border: 2px solid black; border-radius: 10px;" class="w-100" alt="...">
-              </div>
-              <div class="col-md-6 p-4 ps-md-0">
-                <h5 class="mt-0">Columns with stretched link</h5>
-                <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                <a href="#" class="stretched-link">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="row g-0 bg-body-secondary position-relative" style="border-radius: 10px; border: 2px solid #99B4BF; margin-top: 40px; margin-left: 10px; margin-bottom: 20px;">
-              <div class="col-md-6 mb-md-0 p-md-4">
-                <img src="img/paisagem1.avif" style="border: 2px solid black; border-radius: 10px;" class="w-100" alt="...">
-              </div>
-              <div class="col-md-6 p-4 ps-md-0">
-                <h5 class="mt-0">Columns with stretched link</h5>
-                <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                <a href="#" class="stretched-link">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="row g-0 bg-body-secondary position-relative" style="border-radius: 10px; border: 2px solid #99B4BF; margin-top: 40px; margin-left: 10px; margin-bottom: 20px;">
-              <div class="col-md-6 mb-md-0 p-md-4">
-                <img src="img/paisagem1.avif" style="border: 2px solid black; border-radius: 10px;" class="w-100" alt="...">
-              </div>
-              <div class="col-md-6 p-4 ps-md-0">
-                <h5 class="mt-0">Columns with stretched link</h5>
-                <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                <a href="#" class="stretched-link">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="row g-0 bg-body-secondary position-relative" style="border-radius: 10px; border: 2px solid #99B4BF; margin-top: 40px; margin-left: 10px; margin-bottom: 20px;">
-              <div class="col-md-6 mb-md-0 p-md-4">
-                <img src="img/paisagem1.avif" style="border: 2px solid black; border-radius: 10px;" class="w-100" alt="...">
-              </div>
-              <div class="col-md-6 p-4 ps-md-0">
-                <h5 class="mt-0">Columns with stretched link</h5>
-                <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                <a href="#" class="stretched-link">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="row g-0 bg-body-secondary position-relative" style="border-radius: 10px; border: 2px solid #99B4BF; margin-top: 40px; margin-left: 10px; margin-bottom: 20px;">
-              <div class="col-md-6 mb-md-0 p-md-4">
-                <img src="img/paisagem1.avif" style="border: 2px solid black; border-radius: 10px;" class="w-100" alt="...">
-              </div>
-              <div class="col-md-6 p-4 ps-md-0">
-                <h5 class="mt-0">Columns with stretched link</h5>
-                <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                <a href="#" class="stretched-link">Go somewhere</a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-    </div>
- </main>
-
+      </div>
+   </main>
+ </a>
 </body>
 </html>

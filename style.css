@@ -12,7 +12,7 @@ body{
 
 /* Barra de Navegação */
 div#barra-navegacao{
- background-color: #173332;
+ background-color: #121D40;
  padding: 25px;
  margin: auto;
  margin-left: 0px;
@@ -112,11 +112,14 @@ input[type="submit"]{
 
 input[type="date"]{
  text-align: center;
- padding-top: 18px;
- padding-bottom: 6px;
+ padding-top: 22px;
+ padding-bottom: 12px;
  cursor: pointer;
 }
 
+#btn-confirmar-registro{
+  
+}
 
 /* Edição da parte Main do Site */
 main{
@@ -127,4 +130,63 @@ main{
 main > h1{
  font-weight: 900;
  font-size: 3em;
+}
+
+/* Menu/Página Principal */
+
+main.menu-principal{
+ padding: 0px; 
+ background-color: #2D4B73;
+}
+
+div.coluna-foto{
+ background-color: #2D4B73; 
+ margin: 40px;
+ margin-right: 4vw; 
+ padding: 0px;
+ border: 2px solid black;
+}
+
+div.coluna-feed{
+ border-left: 2px solid #99B4BF;
+ background-color: #2D4B73;
+}
+
+div.layout-postagem-feed{
+ border-radius: 10px; 
+ border: 2px solid #99B4BF; 
+ margin-top: 25px; 
+ margin-left: 10px; 
+ margin-bottom: 20px;
+}
+
+img.imagem-feed{
+ border: 2px solid #99B4BF; 
+ border-radius: 10px;
+ height: 100%;
+}
+
+div.div-comentario{
+ background-color: white; 
+ padding: 10px 5px 4px 7px; 
+ border-radius: 10px; 
+ margin-bottom: 12px;
+}
+
+p.ver-perfil-feed{
+ color: #04ADBF; 
+ margin-bottom: 0px;
+}
+
+h5{
+ font-weight: 700;
+}
+
+a.ver-perfil-logado:hover{
+ text-decoration: none;
+ font-weight: 600;
+}
+
+div > p, div > h5:hover{
+ cursor: default;
 }
