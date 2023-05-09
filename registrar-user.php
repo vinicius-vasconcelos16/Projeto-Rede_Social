@@ -114,14 +114,12 @@
       exit;
     }else{
       $hash_senha = gerarHash($senha);
-      $q = "INSERT INTO usuarios (`email`, `nome`, `sexo`, `endereco`, `telefone`, `senha`) VALUES ('$email','$nome','$sexo', '$endereco','$telefone','$hash_senha')";
+      $q = "INSERT INTO usuarios (`email`, `nome`, `sexo`, `nascimento`, `endereco`, `telefone`, `senha`) VALUES ('$email','$nome','$sexo', '$nascimento', '$endereco','$telefone','$hash_senha')";
       $insercao = $banco->query($q);
-      $q_nascimento = "INSERT INTO usuarios (`nascimento`) VALUES ('$nascimento')";
-      $insercao_nasc = $banco->query($q_nascimento);
-      if($insercao && $insercao_nasc){
+      if($insercao){
         echo "<br>";
         echo sucesso("Usuário criado com sucesso! Faça <a href='tela-login.php'>login</a> para continuar ");
-      } elseif(!$insercao_nasc){
+      } else{
         echo erro("Você precisar ter 16+ anos para criar uma conta.");
       }
     }
