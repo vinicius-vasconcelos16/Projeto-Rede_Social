@@ -57,13 +57,21 @@
    </ul>
   </div>  
  </header>
+ <!-- Corpo do Site -->
  <main style="display: <?=$display?>" class="menu-principal"> 
   <div class="container text-center" style="margin: 0;">
+        <!-- Divisão em Colunas -->
         <div class="row align-items-start" style="background-color: #253C59; ">
+          <!-- Coluna 1 -->
           <div class="col-sm-3 fixed coluna-foto">
-              <img src="img/sem-foto.png" class="img-fluid" alt="foto-perfil">
+              <a href="#"><img src="img/sem-foto.png" class="img-fluid" alt="foto-perfil" id="foto-perfil"></a>
+              <button type="button" class="btn btn-outline-info" id="add-publicacao">Adicionar Publicação</button>
           </div>
+          <!-- Coluna 2 -->
           <div class="col-sm-8 p-3 coluna-feed">
+            
+            <!-- Corpo Postagem Feed -->
+
             <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
               <div class="col-md-6 mb-md-0 p-md-4">
                 <img src="img/paisagem1.avif" class="w-100 imagem-feed" alt="paisagem">
@@ -78,7 +86,10 @@
                 </a>
               </div>
             </div>
-            <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
+            
+              <!-- Corpo Postagem Feed -->
+
+              <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
               <div class="col-md-6 mb-md-0 p-md-4">
                 <img src="img/paisagem1.avif" class="w-100 imagem-feed" alt="paisagem">
               </div>
@@ -92,7 +103,10 @@
                 </a>
               </div>
             </div>
-            <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
+            
+              <!-- Corpo Postagem Feed -->
+
+              <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
               <div class="col-md-6 mb-md-0 p-md-4">
                 <img src="img/paisagem1.avif" class="w-100 imagem-feed" alt="paisagem">
               </div>
@@ -106,7 +120,10 @@
                 </a>
               </div>
             </div>
-            <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
+            
+              <!-- Corpo Postagem Feed -->
+
+              <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
               <div class="col-md-6 mb-md-0 p-md-4">
                 <img src="img/paisagem1.avif" class="w-100 imagem-feed" alt="paisagem">
               </div>
@@ -120,7 +137,10 @@
                 </a>
               </div>
             </div>
-            <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
+            
+              <!-- Corpo Postagem Feed -->
+
+              <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
               <div class="col-md-6 mb-md-0 p-md-4">
                 <img src="img/paisagem1.avif" class="w-100 imagem-feed" alt="paisagem">
               </div>
@@ -134,7 +154,10 @@
                 </a>
               </div>
             </div>
-            <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
+            
+              <!-- Corpo Postagem Feed -->
+
+              <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
               <div class="col-md-6 mb-md-0 p-md-4">
                 <img src="img/paisagem1.avif" class="w-100 imagem-feed" alt="paisagem">
               </div>
@@ -148,7 +171,10 @@
                 </a>
               </div>
             </div>
-            <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
+            
+              <!-- Corpo Postagem Feed -->
+
+              <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
               <div class="col-md-6 mb-md-0 p-md-4">
                 <img src="img/paisagem1.avif" class="w-100 imagem-feed" alt="paisagem">
               </div>
@@ -162,7 +188,10 @@
                 </a>
               </div>
             </div>
-            <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
+            
+              <!-- Corpo Postagem Feed -->
+
+              <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
               <div class="col-md-6 mb-md-0 p-md-4">
                 <img src="img/paisagem1.avif" class="w-100 imagem-feed" alt="paisagem">
               </div>
@@ -176,7 +205,10 @@
                 </a>
               </div>
             </div>
-            <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
+            
+              <!-- Corpo Postagem Feed -->
+
+              <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
               <div class="col-md-6 mb-md-0 p-md-4">
                 <img src="img/paisagem1.avif" class="w-100 imagem-feed" alt="paisagem">
               </div>
@@ -190,7 +222,10 @@
                 </a>
               </div>
             </div>
-            <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
+            
+              <!-- Corpo Postagem Feed -->
+
+              <div class="row g-0 bg-body-secondary position-relative layout-postagem-feed">
               <div class="col-md-6 mb-md-0 p-md-4">
                 <img src="img/paisagem1.avif" class="w-100 imagem-feed" alt="paisagem">
               </div>
@@ -204,7 +239,9 @@
                 </a>
               </div>
             </div>
+            <!-- Última Postagem Feed -->
           </div>
+          <!-- Fim da Divisão em Colunas  -->
         </div>
       </div>
   </main>

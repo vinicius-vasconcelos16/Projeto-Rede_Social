@@ -80,7 +80,7 @@ div.msg_erro{
 /* Edição de Formulários */
 form.form{
  width: fit-content;
- border: 2px ridge black;
+ border: 2px solid black;
  margin: auto;
  text-align: center;
  margin-top: 100px;
@@ -117,10 +117,6 @@ input[type="date"]{
  cursor: pointer;
 }
 
-#btn-confirmar-registro{
-  
-}
-
 /* Edição da parte Main do Site */
 main{
  text-align: left;
@@ -140,11 +136,10 @@ main.menu-principal{
 }
 
 div.coluna-foto{
- background-color: #2D4B73; 
+ background-color: #253C59;
  margin: 40px;
  margin-right: 4vw; 
  padding: 0px;
- border: 2px solid black;
 }
 
 div.coluna-feed{
@@ -166,6 +161,11 @@ img.imagem-feed{
  height: 100%;
 }
 
+img#foto-perfil:hover{
+ filter: brightness(10%);
+ cursor: pointer;
+}
+
 div.div-comentario{
  background-color: white; 
  padding: 10px 5px 4px 7px; 
@@ -180,6 +180,7 @@ p.ver-perfil-feed{
 
 h5{
  font-weight: 700;
+ color: rgba(0,0,0,.8);
 }
 
 a.ver-perfil-logado:hover{
@@ -189,4 +190,11 @@ a.ver-perfil-logado:hover{
 
 div > p, div > h5:hover{
  cursor: default;
+}
+
+button#add-publicacao{
+ margin-top: 30px;
+ margin-bottom: 30px;
+ color: rgba(0, 0, 0, 0.8);
+ font-weight: 600;
 }
